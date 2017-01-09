@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illistratrice, integratrice web, webdesigner - Johanna Bouzige</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Envie de m'envoyer un message ?</h2>
+       <form method="post" action="formulaire_un.php">
+               <div class="field">
+                  <input type="text" name="nom" id="nom" placeholder="Nom" />
+               </div>
+               <div class="field">
+                    <input type="email" name="email" id="email" placeholder="Email" />
+               </div>
+
+               <div class="field">
+                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+               </div>
+
+               <div class="field">
+                  <label>Est-tu un robot ?</label>
+                  <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Oui</label>
+                  <input type="radio" id="robot_no" name="robot" /><label for="robot_no">Non</label>
+               </div>
+                 <ul class="actions">
+                    <input type="submit" value="valider" name="valider"/>
+                 </ul>
+        </form>
+  </body>
+</html>
