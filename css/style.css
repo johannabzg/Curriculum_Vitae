@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/blur.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: MaPolice2;
+}
+
+img {
+    height: 90px;
+    width: 120px;
+}
+div ul li { /* les sections de textes */
+  font-size: 2em;
+  font-family: MaPoliceAMoi;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none; /* lien dans les textes cacher */
+    color: #C38686;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #C38686;
+}
+nav ul li a:hover{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+nav ul li {
+    padding-top: 5px;
+}
+nav ul {
+    margin-top: 20px;
+    text-align: right;
+}
+.titre {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+#panel,#panel1,#panel2,#panel3 {
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  display: none;
+}
+.encadrement {
+    display: flex;
+}
+.section2 div {
+  display: flex;
+  flex-wrap: wrap;
+}
+h1, h2 {
+    font-family: Signature;
+    color: #915151;
+    font-size: 35px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+span p {
+  color: #C38686;
+  font-size: 20px;
+}
+h3{
+  text-align: center;
+  color: rgba(10, 10, 10, 0.9);
+  font-size: 150%;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+h3:hover {
+  text-shadow: 3px 2px 2px #AB8181;
+}
+/* FOOTER */
+footer {
+  margin-bottom: auto;
+}
+.copyright li p {
+    font-family: Signature;
+    font-style: bold;
+}
+.copyright li p span {
+  font-family:  monospace;
+  }
+.copyright li {
+  display: flex;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: MaPoliceAMoi;
+    src: url(../Angelface/angelface.otf);
+}
+
+@font-face {
+    font-family: MaPolice2;
+    src: url(../font_light/font.otf);
+}
+@font-face {
+  font-family: Signature;
+  src: url(../greatfont/Great1.ttf);
+}

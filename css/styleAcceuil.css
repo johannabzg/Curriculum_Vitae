@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/paint.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: MaPolice2;
+}
+ main {
+   /*display: flex;*/
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+ }
+#titre {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ul li {
+  list-style: none;
+}
+ a {
+  text-decoration: none;
+}
+h1 {
+  font-family: MaPolice;
+  font-size: 3em;
+  color:#a58587;
+  text-shadow: 3px 3px 2px #3C0E12;
+}
+h1:hover {
+  text-shadow: 5px 5px 2px #3C0E12;
+}
+p {
+  text-align: center;
+  font-family: MaPolice2;
+  font-size: 25px;
+}
+@font-face {
+  font-family:  MaPolice;
+  src: url(../painter/painter.ttf);
+}
+@font-face {
+    font-family: MaPolice2;
+    src: url(../font_light/font.otf);
+}

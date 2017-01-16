@@ -1,96 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Illistratrice, integratrice web, webdesigner - Johanna Bouzige</title>
+    <title>Acceuil, Illistratrice, integratrice web, webdesigner - Johanna Bouzige</title>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-        <nav>
-          <span>
-              <h2>Johanna Bouzige</h2>
-              <p>19 ans, Ales <br /> permi B, vehiculé <i class="fa fa-car" aria-hidden="true"></i></p>
-          </span>
-          <ul>
-              <li><a href="#">Contact <i class="fa fa-optin-monster" aria-hidden="true"></i></a></li>
-              <li><a href="#">GitHub <i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
-              <li><a href="#">Page Facebook "JoyArt" <i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-          </ul>
-        </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://www.tutorialspoint.com/jquery/jquery-ui-1.7.2.custom.min.js"></script>
+    <!-- <script src="animation.js"></script> -->
+    <link rel="stylesheet" href="css/styleAcceuil.css">
 
-           <h1 class="titre">CV - Webdesigner, intergratrice Web, Illustratrice</h1>
-
-
-        <section class="section1">
-          <h3>Experience et formations <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
-          <hr>
-          <ul>
-              <li> Brevet des colleges </li>
-              <li> A travailler en tant qu'illustratrice dans un ouvrage intituler <a href="http://www.onac-vg.fr/fr/actualite-mimc/details/id:304/">"Camarade entends-tu?"</a> de 2012 à 2013.</li>
-              <li> A participer à l'elaboration d'une <a href="http://www.gillesr-educ.fr/Actions-p%C3%A9dagogiques/Resistances">exposition</a> en tant que portraitiste sur la resistance en 2015.</li>
-              <li> 2016-2017 pendant 6 mois, dans la formation Coda by Simplon </li>
-              <li> Webdesign / integration HTML et CSS responsive</li>
-
-          </ul>
-        </section>
-        <section class="section2">
-          <h3>Competences Web <i class="fa fa-desktop" aria-hidden="true"></i></h3>
-          <div class="logo1">
-            <p>aquie</p>
+ </head>
+ <body>
+    <main>
+      <button id="btn" type="button" name="button"></button>
+        <div id="titre">
             <ul>
-               <li><img src="images/html5.jpg" alt=""></li>
-               <li><img src="images/css3.jpg" alt=""></li>
-               <li><img src="images/b_1_q_0_p_0.jpg" alt=""></li>
-               <li><img src="images/js.jpg" alt=""></li>
-               <li><img src="images/jquery.jpg" alt=""></li>
-               <li><img src="images/gimp.jpg" alt=""></li>
-
+                <li><a href="index1.html"><h1>Johanna Bouzige</h1></a></li>
+                <li><p>Bienvenue sur mon site</p></li>
             </ul>
-          </div>
-          <div class="logo2">
-            <p>(Notion)</p>
-            <ul>
+        </div>
 
-               <li><img src="images/php.jpg" alt=""></li>
-               <li><img src="images/sql.jpg" alt=""></li>
-               <li><img src="images/wp.jpg" alt=""></li>
-            </ul>
-          </div>
-
-        </section>
-        <section class="section3">
-          <h3> competences <i class="fa fa-paint-brush" aria-hidden="true"></i> </h3>
-          <hr>
-          <ul>
-              <li> Le dessins en particulier en portrait, tatouage, paysage, ( crayon, pastel, aquarelle, peinture acrylique )</li>
-              <li> Le travail manuel ( dessins, sculture, restauration de mobilier)</li>
-              <li> perfectioniste, perseverante, aime apprendre, autonome. </li>
-              <li> Aime aussi travailler en equipe, la collaboration ne me fait pas peur :) </li>
-          </ul>
-        </section>
-
-        <section class="section4">
-          <h3>Passions</h3>
-          <hr>
-          <ul>
-              <li>L'art, le travail manuel </li>
-              <li>la science,(nouvelle technologie)</li>
-              <li>les jeux video </li>
-              <li>la musique.</li>
-              <li>Le web (premier site vitrine en autodidacte en 2016)</li>
-          </ul>
-
-        </section>
-
-         <!-- dans contact faire un formulaire/  -->
-         <!-- faire une espace "creation" avant de footer  -->
-         <footer>
-           <ul class="copyright">
-							<li>&copy; Johanna Bouzige 2016 <i class="fa fa-hand-spock-o" aria-hidden="true"></i></li>
-						</ul>
-
-         </footer>
-  </body>
+        <div style="border:1px solid #782717; margin:10px;width:400px;">
+          <div id="box" style="background:#C1604C;height:50px;width:1px;border:1px solid #782717;"></div>
+        </div>
+           <!-- faire une progress bar plus classe et mieux centrer -->
+    </main>
+ </body>
+ <script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("#box").animate({
+      width: "400px"
+    }, {
+      duration: 500,
+      easing: "linear",
+      step: function(x) {
+        $("#demo").text(Math.round(x * 100 / 400)  + "%");
+      }
+    });
+  });
+});
+</script>
 </html>
