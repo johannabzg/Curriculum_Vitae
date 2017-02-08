@@ -5,33 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil, Illistratrice, integratrice web, webdesigner - Johanna Bouzige</title>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/jojo.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="http://www.tutorialspoint.com/jquery/jquery-ui-1.7.2.custom.min.js"></script>
-    <!-- <script src="animation.js"></script> -->
+    <!-- <script src="js/animation.js"></script> -->
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styleAcceuil.css">
 
  </head>
  <body>
     <main>
-      <button id="btn" type="button" name="button"></button>
         <div id="titre">
             <ul>
-                <li><a href="index1.html"><h1>Johanna Bouzige</h1></a></li>
-                <li><p>Bienvenue sur mon site</p></li>
+                <li><h1 class="tlt">Johanna Bouzige</h1></li>
+                <li><p id="btn">Bienvenue sur mon site</p></li>
             </ul>
         </div>
-
-        <div style="border:1px solid #782717; margin:10px;width:400px;">
-          <div id="box" style="background:#C1604C;height:50px;width:1px;border:1px solid #782717;"></div>
-        </div>
-           <!-- faire une progress bar plus classe et mieux centrer -->
+        <!-- <div style="text-aligncenter;border:0.5px solid #000; margin:10px; width:400px;">
+        <div id="box"></div>
+        </div> -->
+        <!-- faire une progress bar plus classe et mieux centrer -->
     </main>
  </body>
- <script>
+ <!-- <script>
 $(document).ready(function(){
   $("#btn").click(function(){
     $("#box").animate({
-      width: "400px"
+      width: "398px"
     }, {
       duration: 500,
       easing: "linear",
@@ -41,5 +43,15 @@ $(document).ready(function(){
     });
   });
 });
+</script> -->
+<script>
+$(function() {
+  $('.tlt').textillate({ in: { effect: 'rollIn'} });
+});
+
+$('.tlt').click(function() {
+  $(this).textillate({ in: { effect: 'rollIn'} });
+  $(location).attr("href","index1.html");
+})
 </script>
 </html>

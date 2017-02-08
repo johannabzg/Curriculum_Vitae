@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Illistratrice, integratrice web, webdesigner - Johanna Bouzige</title>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <link rel="icon" type="image/x-icon" href="images/jojo.png" />
+    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/styleform.css">
+</head>
+<body>
     <h2>Envie de m'envoyer un message ?</h2>
-       <form method="post" action="formulaire_un.php">
-               <div class="field">
-                  <input type="text" name="nom" id="nom" placeholder="Nom" />
-               </div>
-               <div class="field">
-                    <input type="email" name="email" id="email" placeholder="Email" />
-               </div>
+    <form id='contact' method="post" action="formulairedeux.php" enctype="multipart/form-data">
+      <div class="rang">
+        <input type="hidden" name="subject" value="formail">
+        <div class="field">
+            <input type="text" name="nom" id="nom" placeholder="Nom" />
+        </div>
+        <div class="field">
 
-               <div class="field">
-                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-               </div>
+            <input type="text" name="prenom" id="prenom" placeholder="Prenom" />
+        </div>
+        <div class="field">
 
-               <div class="field">
-                  <label>Est-tu un robot ?</label>
-                  <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Oui</label>
-                  <input type="radio" id="robot_no" name="robot" /><label for="robot_no">Non</label>
-               </div>
-                 <ul class="actions">
-                    <input type="submit" value="valider" name="valider"/>
-                 </ul>
-        </form>
-  </body>
+            <input type="email" name="email" id="mail" value="" placeholder="Email" />
+        </div>
+        <div class="field">
+
+            <input type="text" name="objet" id="objet" placeholder="Sujet" />
+        </div>
+        <div class="field">
+
+            <textarea name="message" id="message" placeholder="..."></textarea>
+        </div>
+      </div>
+
+        <div class="ecp">
+            <label>Est-tu un robot ?</label>
+            <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Oui</label>
+            <input type="radio" id="robot_no" name="robot" /><label for="robot_no">Non</label>
+            <button class="bout1" type="submit">Envoyer</button>
+            <button class="bout1" type="reset">Annuler</button>
+            <button class="bout1" type="button" name="button"><a href="index1.html">Retour</a></button>
+       </div>
+
+       <!-- <form id='contact' method="post" action="formulairedeux.php" enctype="multipart/form-data">
+       <p id='obj'><label for='objet'>Objet de votre message :<br>
+       <input type='text' name='objet' id='objet' tabindex='10' size='30'></label></p>
+
+       <p id="adr"><label for="mail">Votre Adresse E-mail<br>
+       <input name="votremail" tabindex="20" size="30" type="text" id="mail" value="<?php echo $votremail; ?>"></label></p>
+
+       <p id="msg"><label for="message">Votre message<br>
+       <textarea tabindex="30" rows="10" cols="30" name="message" id="message"><?php echo $message; ?></textarea>
+       </label></p>
+     <?php echo $bas_formulaire;?>
+     </form> -->
+</body>
 </html>

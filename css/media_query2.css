@@ -1,0 +1,41 @@
+/* responsive version portable 320x480 */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  h2, h1 { font-size: 260%;}
+  h1 { margin-top: 40% !important;}
+  h3 { font-size: 20px;}
+  nav { height: 100px;}
+  nav ul { text-align: center; margin-top:7px; }
+  nav ul li a { font-size: 10px !important;}
+  button { height: 15px; margin-top: 5px;}
+  button a { padding-bottom: 2px;}
+  .prez { font-size: 7px; text-align: center;}
+  .prez p { font-size: 9px; text-align: center;}
+  body { font-size: 40%;}
+  #panel,#panel1,#panel2,#panel3 { padding-left: inherit; font-size: 13px; text-align: center; width: 90%; margin: auto;}
+  footer ul li p { font-size: 40%; margin-top: 60%;}
+  img { height: 25px; width: 25px; }
+  .fa-star:before, .fa-star-half-o:before, .fa-star-o:before {font-size: 10px;}
+}
+
+/* responsive version portable 360x640 */
+@media screen and (min-width: 360px) and (max-width: 530px) {
+  #panel,#panel1,#panel2,#panel3 {width: 90%; margin: auto;}
+  img { height: 25px; width: 25px;}
+  footer ul li p { font-size: 40%; margin-top: 60%;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  h2, h1 { font-size: 390%;}
+  h3 { font-size: 27px;}
+  nav { height: 115px;}
+  h1 { margin-top: 40% !important;}
+  .prez p { font-size: 230%;}
+  body { font-size: 40%;}
+  nav ul li a { font-size: 16px;}
+  #panel,#panel1,#panel2,#panel3 { padding-left: inherit; font-size: 13px; text-align: center; margin-left: 60px; margin-right: 60px;}
+  footer ul li p { font-size: 60%; color: #000 !important; margin-top: 60%;}
+  img { height: 50px; width: 70px; }
+  .fa-star:before, .fa-star-half-o:before, .fa-star-o:before {font-size: 10px;}
+
+}
+/*truc a faire : ( r'ajouter une animation comme cam en js/jquery avec link en perso )*/

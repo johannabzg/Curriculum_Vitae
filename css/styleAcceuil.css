@@ -5,6 +5,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: MaPolice2;
+  cursor: url('../font/Normal_Select.cur'), pointer;
 }
  main {
    /*display: flex;*/
@@ -20,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 ul li {
   list-style: none;
@@ -29,23 +31,33 @@ ul li {
 }
 h1 {
   font-family: MaPolice;
-  font-size: 3em;
-  color:#a58587;
-  text-shadow: 3px 3px 2px #3C0E12;
+  font-size: 80px;
+  color: #ff9966;
+  text-shadow: 4px 4px 2px #3C0E12;
+
 }
 h1:hover {
-  text-shadow: 5px 5px 2px #3C0E12;
+  text-shadow: 6px 6px 2px #3C0E12;
+  cursor: url('../font/Link_Select.cur'), auto;
 }
 p {
   text-align: center;
   font-family: MaPolice2;
-  font-size: 25px;
+  font-size: 30px;
+}
+#box {
+  text-align: center;
+  /*display: none;*/
+  background:#47780f;
+   height:30px;
+   width:0.5px;
+   border:1px solid #47780f;
 }
 @font-face {
   font-family:  MaPolice;
-  src: url(../painter/painter.ttf);
+  src: url(../font/york/letter2.ttf);
 }
 @font-face {
     font-family: MaPolice2;
-    src: url(../font_light/font.otf);
+    src: url(../font/font_light/font.otf);
 }
