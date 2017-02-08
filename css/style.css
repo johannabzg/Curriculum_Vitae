@@ -1,113 +1,176 @@
+html {
+  cursor: url('../font/Normal_Select.cur'), auto;
+}
 body {
   margin: 0;
   padding: 0;
   background-image: url(../images/blur.jpg);
   background-attachment: fixed;
   background-size: cover;
-  font-family: MaPolice2;
-}
-
-img {
-    height: 90px;
-    width: 120px;
-}
-div ul li { /* les sections de textes */
-  font-size: 2em;
   font-family: MaPoliceAMoi;
 }
+img {
+    height: 80px;
+    width: 80px;
+}
+/*////////// section texte ////////*/
+/* les sections de textes */
 ul li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none; /* lien dans les textes cacher */
-    color: #C38686;
+  text-decoration: none; /* lien dans les textes cacher */
+  color: #166CBA;
+  cursor: url('../font/Link_Select.cur'), auto;
 }
+div ul li a:hover {
+  color: #18334C;
+}
+.fa-star:before, .fa-star-half-o:before, .fa-star-o:before { /* etoile  */
+  font-size: 25px;
+  color: #000;
+}
+li span {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+/*/////////////////////////////*/
 nav {
     display: flex;
     justify-content: space-around;
+    box-shadow: 2px 2px 3px rgba(58,58,90,0.9);
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 150px;
+    z-index: 1
 }
 nav ul li a {
     text-decoration: none;
-    font-size: 20px;
-    color: #C38686;
+    font-size: 18px;
+    color: #fff;  /* couleur lien nav */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7)
 }
 nav ul li a:hover{
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
-}
-nav ul li {
-    padding-top: 5px;
+    text-shadow: 2.5px 2.5px 2px rgba(0, 0, 0, 0.7);
 }
 nav ul {
     margin-top: 20px;
     text-align: right;
 }
+button {
+  border: none;
+  border-radius: 20px;
+  background-color: #1B68AD;
+  box-shadow: 1px 1px 1px #000;
+}
+button:hover {
+  box-shadow: 2px 2px 2px #000;
+}
 .titre {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-bottom: 5%;
 }
+
 #panel,#panel1,#panel2,#panel3 {
-  font-size: 18px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
   border-radius: 20px;
+  box-shadow: 3px 3px 7px #000;
+  cursor: url('../font/Normal_Select.cur'), auto;
+  font-family: MaPoliceAMoi2;
+  padding-left: 15px;
+  color: rgba(0,0,0,0.8);
   display: none;
 }
-.encadrement {
-    display: flex;
+#panel ul {
+  padding: 5px;
 }
-.section2 div {
+.encadrement_logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.section1, .section2, .section3, .section4 {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.h3class {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.tele {
+  /*background-image: url(../images/pc.jpg);*/
+  background-size: cover;
+  height: 50%;
+  width: 80%;
 }
 h1, h2 {
     font-family: Signature;
-    color: #915151;
+    color: #1B68AD;
     font-size: 35px;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
 }
-span p {
-  color: #C38686;
+.prez p {
+  color: #fff;
   font-size: 20px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
 }
-h3{
+h3 {
+  font-family: MaPolice2;
+  color: #fff;
   text-align: center;
-  color: rgba(10, 10, 10, 0.9);
-  font-size: 150%;
-  padding-left: 20px;
-  padding-top: 25px;
+  font-size: 190%;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  cursor: url('../font/Link_Select.cur'), pointer;
+}
+h3 a {
+  color: inherit;
 }
 h3:hover {
-  text-shadow: 3px 2px 2px #AB8181;
+  text-shadow: 3.5px 3.5px 2px rgba(0, 0, 0, 0.7);
 }
+
 /* FOOTER */
 footer {
-  margin-bottom: auto;
+  bottom: 0;
+  position: fixed;
 }
 .copyright li p {
     font-family: Signature;
-    font-style: bold;
+    color: #000;
+    bottom: 0;
 }
 .copyright li p span {
   font-family:  monospace;
-  }
+  text-decoration: none;
+}
 .copyright li {
   display: flex;
     font-size: 25px;
 }
-
 @font-face {
     font-family: MaPoliceAMoi;
-    src: url(../Angelface/angelface.otf);
+    src: url(../font/mana.ttf);
 }
-
+@font-face {
+    font-family: MaPoliceAMoi2;
+    src: url(../font/AA.ttf);
+}
 @font-face {
     font-family: MaPolice2;
-    src: url(../font_light/font.otf);
+    src: url(../font/block.ttf);
 }
 @font-face {
   font-family: Signature;
-  src: url(../greatfont/Great1.ttf);
+  src: url(../font/Mario.ttf);
+  /*src: url(../font/greatfont/Great2.ttf);*/
 }
