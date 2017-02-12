@@ -1,17 +1,33 @@
 $(document).ready(function() {
     $("#formul").hide();
+    $("#panel").hide();
+    $("#panel1").hide();
+    $("#panel2").hide();
+    $("#panel3").hide();
 
     $("#flip").click(function() {
         $("#panel").slideToggle("slow");
+        $("#panel1").hide();
+        $("#panel2").hide();
+        $("#panel3").hide();
     });
     $("#flip1").click(function() {
         $("#panel1").slideToggle("slow");
+        $("#panel").hide();
+        $("#panel2").hide();
+        $("#panel3").hide();
     });
     $("#flip2").click(function() {
         $("#panel2").slideToggle("slow");
+        $("#panel").hide();
+        $("#panel1").hide();
+        $("#panel3").hide();
     });
     $("#flip3").click(function() {
         $("#panel3").slideToggle("slow");
+        $("#panel").hide();
+        $("#panel1").hide();
+        $("#panel2").hide();
     });
     // formulaire
     $(".clickContact").click(function() {

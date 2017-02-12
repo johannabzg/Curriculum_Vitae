@@ -91,10 +91,10 @@ button:hover {
   border-radius: 20px;
   box-shadow: 3px 3px 7px #000;
   cursor: url('../font/Normal_Select.cur'), auto;
-  font-family: MaPoliceAMoi2;
+  font-family: MaPol;
   padding-left: 15px;
   color: rgba(0,0,0,0.8);
-  display: none;
+
 }
 #panel ul {
   padding: 5px;
@@ -211,11 +211,12 @@ footer {
 }
 @font-face {
     font-family: MaPoliceAMoi;
-    src: url(../font/mana.ttf);
+    /*src: url(../font/mana.ttf);*/
+      src: url(../font/monof55.ttf);
 }
 @font-face {
-    font-family: MaPoliceAMoi2;
-    src: url(../font/AA.ttf);
+    font-family: MaPol;
+    src: url(../font/JA.ttf);
 }
 @font-face {
     font-family: MaPolice2;
